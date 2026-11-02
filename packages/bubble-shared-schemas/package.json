@@ -21,8 +21,8 @@
     }
   },
   "scripts": {
-    "build": "tsup && tsc --emitDeclarationOnly",
-    "dev": "tsc --watch",
+    "build": "node init && tsup && tsc --emitDeclarationOnly",
+    "dev": "node init && tsc --watch",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/**/*.ts",
     "clean": "rm -rf dist",
