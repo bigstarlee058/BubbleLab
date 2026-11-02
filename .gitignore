@@ -9,10 +9,6 @@ build/
 .turbo/
 
 # Environment files
-.env
-.env.local
-.env.production
-.env.development
 
 # Cache directories
 .cache/
@@ -23,7 +19,6 @@ build/
 coverage/
 
 # IDE files
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -74,7 +69,6 @@ pids
 .env.development.local
 .env.test.local
 .env.production.local
-.env.local
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
@@ -171,3 +165,4 @@ dist/
 branch_structure.json
 temp_auto_push.bat
 temp_interactive_push.bat
+config.bat

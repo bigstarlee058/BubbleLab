@@ -23,11 +23,11 @@
     }
   },
   "scripts": {
-    "build": "tsc && tsx scripts/bubble-bundler.ts && tsx scripts/bubble-metadata-bundler.ts",
-    "build:types": "tsc",
-    "build:bundle": "tsx scripts/bubble-bundler.ts",
-    "build:metadata": "tsx scripts/bubble-metadata-bundler.ts",
-    "dev": "tsc --watch",
+    "build": "node init && tsc && tsx scripts/bubble-bundler.ts && tsx scripts/bubble-metadata-bundler.ts",
+    "build:types": "node init && tsc",
+    "build:bundle": "node init && tsx scripts/bubble-bundler.ts",
+    "build:metadata": "node init && tsx scripts/bubble-metadata-bundler.ts",
+    "dev": "node init && tsc --watch",
     "typecheck": "tsc --noEmit",
     "test": "vitest run --exclude='**/*.integration.{test,spec}.ts'",
     "test:coverage": "vitest run --coverage --exclude='**/*.integration.{test,spec}.ts'",
